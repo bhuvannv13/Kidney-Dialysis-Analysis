@@ -51,8 +51,5 @@ If you'd like to contribute, please fork the repository and submit a pull reques
 License
 This project is licensed under the MIT License.
 
-vbnet
-Copy code
 
-Would you like me to extract specific information from the notebook to refine this README fu
 
