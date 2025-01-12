@@ -27,16 +27,13 @@ This project uses the following Python libraries:
 ## Getting Started
 
 Navigate to the project folder:
-bash
-Copy code
+
 cd kidney-dialysis-analysis
 Install the required libraries:
-bash
-Copy code
+
 pip install -r requirements.txt
 Open the Jupyter Notebook:
-bash
-Copy code
+
 jupyter notebook Kidney Dialysis.ipynb
 Usage
 Run the notebook cells step-by-step to reproduce the analysis.
