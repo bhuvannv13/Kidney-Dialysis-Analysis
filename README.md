@@ -25,8 +25,7 @@ This project uses the following Python libraries:
 - Any other dependencies specific to the notebook
 
 ## Getting Started
-1. Clone this repository:
-   ```bash
+
 Navigate to the project folder:
 bash
 Copy code
