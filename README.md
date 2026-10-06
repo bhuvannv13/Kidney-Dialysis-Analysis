@@ -1,52 +1,32 @@
 # Kidney Dialysis Data Analysis
 
-## Overview
-This project focuses on analyzing kidney dialysis data using Python. The primary goal is to preprocess the dataset, apply machine learning models, and evaluate their performance to gain insights into kidney dialysis outcomes.
+Coursework notebooks exploring healthcare data with Python: building and analysing patient treatment datasets, and comparing simple classifiers for dialysis-related outcomes.
 
-## Features
-- Data preprocessing and cleaning
-- Exploratory data analysis (EDA) with visualizations
-- Implementation of machine learning models
-- Evaluation of model performance
-- Insights and recommendations
+> Learning project. Not intended for clinical use.
 
-## Prerequisites
-Make sure you have the following installed:
-- Python 3.8 or higher
-- Jupyter Notebook
+## Notebooks
 
-## Libraries Used
-This project uses the following Python libraries:
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
-- Any other dependencies specific to the notebook
+| Notebook | What it does |
+|---|---|
+| `HCA_Project.ipynb` | Generates a synthetic dataset of 1,000 patient records, then trains a decision tree and a logistic regression model to predict `Need Dialysis`. |
+| `Kidney Dialysis.ipynb` | Cleans a kidney dialysis dataset, one-hot encodes the categorical fields, and compares logistic regression, decision tree and gradient boosting for predicting `Symptom Relief`. |
+| `HCA_CSV.ipynb` | Loads and inspects a hospital admissions table derived from MIMIC-III. |
 
-## Getting Started
+## Results
 
-Navigate to the project folder:
+Accuracy recorded in the notebooks is close to chance: about 0.25 for the symptom-relief models and about 0.53 for the decision tree on dialysis need. The dataset in `HCA_Project.ipynb` is randomly generated, so there is no real signal for a model to learn there. The value of this project is the end-to-end workflow (cleaning, encoding, training and evaluation) rather than the scores.
 
-cd kidney-dialysis-analysis
-Install the required libraries:
+## Running the notebooks
 
-pip install -r requirements.txt
-Open the Jupyter Notebook:
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn notebook
+jupyter notebook
+```
 
-jupyter notebook Kidney Dialysis.ipynb
-Usage
-Run the notebook cells step-by-step to reproduce the analysis.
-Modify the code or parameters as needed to explore additional insights.
-Results
-Key outcomes of this project:
+The notebooks read CSV files from local paths and the data files are not included in this repository. Update the `pd.read_csv` paths to point at your own copies. `HCA_Project.ipynb` can regenerate its synthetic dataset from its first cell.
 
-[Insert high-level results or insights from the notebook, such as model accuracy or EDA findings.]
-Contribution
-If you'd like to contribute, please fork the repository and submit a pull request.
+## Possible improvements
 
-License
-This project is licensed under the MIT License.
-
-
-
+- Use a real, documented dialysis dataset
+- Add cross-validation and metrics beyond accuracy
+- Add a `requirements.txt` and relative data paths
