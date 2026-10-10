@@ -19,7 +19,7 @@ Accuracy recorded in the notebooks is close to chance: about 0.25 for the sympto
 ## Running the notebooks
 
 ```bash
-pip install pandas numpy matplotlib seaborn scikit-learn notebook
+pip install -r requirements.txt
 jupyter notebook
 ```
 
@@ -29,4 +29,8 @@ The notebooks read CSV files from local paths and the data files are not include
 
 - Use a real, documented dialysis dataset
 - Add cross-validation and metrics beyond accuracy
-- Add a `requirements.txt` and relative data paths
+- Use relative data paths
+
+## License
+
+MIT. See [LICENSE](LICENSE).
